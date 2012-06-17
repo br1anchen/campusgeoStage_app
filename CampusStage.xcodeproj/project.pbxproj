@@ -1,0 +1,284 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2978361D158E04BA0085970D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2978361C158E04BA0085970D /* UIKit.framework */; };
+		2978361F158E04BA0085970D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2978361E158E04BA0085970D /* Foundation.framework */; };
+		29783621158E04BA0085970D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29783620158E04BA0085970D /* CoreGraphics.framework */; };
+		29783627158E04BA0085970D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 29783625158E04BA0085970D /* InfoPlist.strings */; };
+		29783629158E04BB0085970D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29783628158E04BA0085970D /* main.m */; };
+		2978362D158E04BB0085970D /* CampusStageAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2978362C158E04BB0085970D /* CampusStageAppDelegate.m */; };
+		29783630158E04BB0085970D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2978362E158E04BB0085970D /* MainStoryboard.storyboard */; };
+		29783633158E04BB0085970D /* CampusStageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29783632158E04BB0085970D /* CampusStageViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		29783618158E04BA0085970D /* CampusStage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CampusStage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2978361C158E04BA0085970D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2978361E158E04BA0085970D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		29783620158E04BA0085970D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		29783624158E04BA0085970D /* CampusStage-Info.plist */ = {isa = PBXFileReference; path = "CampusStage-Info.plist"; sourceTree = "<group>"; };
+		29783626158E04BA0085970D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		29783628158E04BA0085970D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2978362A158E04BB0085970D /* CampusStage-Prefix.pch */ = {isa = PBXFileReference; path = "CampusStage-Prefix.pch"; sourceTree = "<group>"; };
+		2978362B158E04BB0085970D /* CampusStageAppDelegate.h */ = {isa = PBXFileReference; path = CampusStageAppDelegate.h; sourceTree = "<group>"; };
+		2978362C158E04BB0085970D /* CampusStageAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampusStageAppDelegate.m; sourceTree = "<group>"; };
+		2978362F158E04BB0085970D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		29783631158E04BB0085970D /* CampusStageViewController.h */ = {isa = PBXFileReference; path = CampusStageViewController.h; sourceTree = "<group>"; };
+		29783632158E04BB0085970D /* CampusStageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CampusStageViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29783615158E04BA0085970D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2978361D158E04BA0085970D /* UIKit.framework in Frameworks */,
+				2978361F158E04BA0085970D /* Foundation.framework in Frameworks */,
+				29783621158E04BA0085970D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2978360D158E04BA0085970D = {
+			isa = PBXGroup;
+			children = (
+				29783622158E04BA0085970D /* CampusStage */,
+				2978361B158E04BA0085970D /* Frameworks */,
+				29783619158E04BA0085970D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		29783619158E04BA0085970D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				29783618158E04BA0085970D /* CampusStage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2978361B158E04BA0085970D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2978361C158E04BA0085970D /* UIKit.framework */,
+				2978361E158E04BA0085970D /* Foundation.framework */,
+				29783620158E04BA0085970D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		29783622158E04BA0085970D /* CampusStage */ = {
+			isa = PBXGroup;
+			children = (
+				2978362B158E04BB0085970D /* CampusStageAppDelegate.h */,
+				2978362C158E04BB0085970D /* CampusStageAppDelegate.m */,
+				2978362E158E04BB0085970D /* MainStoryboard.storyboard */,
+				29783631158E04BB0085970D /* CampusStageViewController.h */,
+				29783632158E04BB0085970D /* CampusStageViewController.m */,
+				29783623158E04BA0085970D /* Supporting Files */,
+			);
+			path = CampusStage;
+			sourceTree = "<group>";
+		};
+		29783623158E04BA0085970D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				29783624158E04BA0085970D /* CampusStage-Info.plist */,
+				29783625158E04BA0085970D /* InfoPlist.strings */,
+				29783628158E04BA0085970D /* main.m */,
+				2978362A158E04BB0085970D /* CampusStage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		29783617158E04BA0085970D /* CampusStage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 29783636158E04BB0085970D /* Build configuration list for PBXNativeTarget "CampusStage" */;
+			buildPhases = (
+				29783614158E04BA0085970D /* Sources */,
+				29783615158E04BA0085970D /* Frameworks */,
+				29783616158E04BA0085970D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CampusStage;
+			productName = CampusStage;
+			productReference = 29783618158E04BA0085970D /* CampusStage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2978360F158E04BA0085970D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CampusStage;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 29783612158E04BA0085970D /* Build configuration list for PBXProject "CampusStage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2978360D158E04BA0085970D;
+			productRefGroup = 29783619158E04BA0085970D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				29783617158E04BA0085970D /* CampusStage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		29783616158E04BA0085970D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29783627158E04BA0085970D /* InfoPlist.strings in Resources */,
+				29783630158E04BB0085970D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29783614158E04BA0085970D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29783629158E04BB0085970D /* main.m in Sources */,
+				2978362D158E04BB0085970D /* CampusStageAppDelegate.m in Sources */,
+				29783633158E04BB0085970D /* CampusStageViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		29783625158E04BA0085970D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				29783626158E04BA0085970D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2978362E158E04BB0085970D /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2978362F158E04BB0085970D /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		29783634158E04BB0085970D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		29783635158E04BB0085970D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		29783637158E04BB0085970D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CampusStage/CampusStage-Prefix.pch";
+				INFOPLIST_FILE = "CampusStage/CampusStage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		29783638158E04BB0085970D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CampusStage/CampusStage-Prefix.pch";
+				INFOPLIST_FILE = "CampusStage/CampusStage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		29783612158E04BA0085970D /* Build configuration list for PBXProject "CampusStage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29783634158E04BB0085970D /* Debug */,
+				29783635158E04BB0085970D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		29783636158E04BB0085970D /* Build configuration list for PBXNativeTarget "CampusStage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				29783637158E04BB0085970D /* Debug */,
+				29783638158E04BB0085970D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2978360F158E04BA0085970D /* Project object */;
+}
