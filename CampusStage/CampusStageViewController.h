@@ -7,7 +7,24 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <GameKit/GameKit.h>
+#import <MapKit/MapKit.h>
 
-@interface CampusStageViewController : UIViewController
+@interface CampusStageViewController : UIViewController<MKMapViewDelegate,GKSessionDelegate,GKPeerPickerControllerDelegate>
+{
+    GKSession *connectionSession;
+    GKPeerPickerController *connectionPicker;
+    NSMutableArray *connectionPeers;
+}
+
+@property (retain) GKSession *connectionSession;
+@property (nonatomic,retain) NSMutableArray *connectionPeers;
+@property (nonatomic,retain) GKPeerPickerController *connectionPicker;
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+@property (nonatomic, strong) IBOutlet UITextField *areaText;
+@property (nonatomic,strong) NSString *username;
+@property (nonatomic,strong) MKPointAnnotation *annotationPoint;
+
+- (IBAction)sendIndoorInfo:(id)sender;
 
 @end
