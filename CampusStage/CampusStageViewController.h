@@ -26,5 +26,6 @@
 @property (nonatomic,strong) MKPointAnnotation *annotationPoint;
 
 - (IBAction)sendIndoorInfo:(id)sender;
+- (IBAction)connectPeer:(id)sender;
 
 @end

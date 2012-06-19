@@ -34,7 +34,6 @@
     self.mapView.delegate = self;
     
     [self populateMapWithLocation];
-    [connectionPicker show];
 	// Do any additional setup after loading the view, typically from a nib.
     
     [NSTimer scheduledTimerWithTimeInterval:5 target: self selector:@selector(refreshMap) userInfo:nil repeats:YES];
@@ -126,6 +125,10 @@
         }
 
     }
+}
+
+- (IBAction)connectPeer:(id)sender {
+    [connectionPicker show];
 }
 
 -(NSString *)getHostAddress
