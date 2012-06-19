@@ -18,7 +18,7 @@
 
 @implementation CampusStageViewController
 @synthesize connectionPeers,connectionPicker,connectionSession;
-@synthesize mapView,areaText;
+@synthesize mapView,buildingText,roomText;
 @synthesize annotationPoint,username;
 
 - (void)viewDidLoad
@@ -95,11 +95,24 @@
     if([username length] > 0)
     {
         //set location to test
-        NSString *latitude = @"31.274697";
-        NSString *longitude = @"121.459672";
+        NSString *latitude = @"";
+        NSString *longitude = @"";
+        if ([buildingText.text isEqualToString:@"4"]) {
+            latitude = @"31.274351";
+            longitude = @"121.459799";
+        }else if([buildingText.text isEqualToString:@"XingJian"])
+        {
+            latitude = @"31.278079";
+            longitude = @"121.457604";
+        }else if([buildingText.text isEqualToString:@"1"])
+        {
+            latitude = @"31.273961";
+            longitude = @"121.458119";
+        }
+        
         int geoType = 4;
-        NSLog(@"%@",self.areaText.text);
-        NSString *apiAddress = [NSString stringWithFormat:@"http://%@/geo/update?username=%@&latitude=%@&longitude=%@&geoType=%d&area=%@",[self getHostAddress],username,latitude,longitude,geoType,self.areaText.text];
+        NSString *areaText = [NSString stringWithFormat:@"building%@_%@",self.buildingText.text,self.roomText.text];
+        NSString *apiAddress = [NSString stringWithFormat:@"http://%@/geo/update?username=%@&latitude=%@&longitude=%@&geoType=%d&area=%@",[self getHostAddress],username,latitude,longitude,geoType,areaText];
         NSLog(@"%@",apiAddress);
         NSURL *url = [NSURL URLWithString:apiAddress];//set the url of server
         ASIHTTPRequest *request = [ASIHTTPRequest requestWithURL:url]; //make a ASIHTTP request 

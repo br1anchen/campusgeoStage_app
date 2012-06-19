@@ -21,7 +21,8 @@
 @property (nonatomic,retain) NSMutableArray *connectionPeers;
 @property (nonatomic,retain) GKPeerPickerController *connectionPicker;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
-@property (nonatomic, strong) IBOutlet UITextField *areaText;
+@property (nonatomic, strong) IBOutlet UITextField *buildingText;
+@property (nonatomic, strong) IBOutlet UITextField *roomText;
 @property (nonatomic,strong) NSString *username;
 @property (nonatomic,strong) MKPointAnnotation *annotationPoint;
 
